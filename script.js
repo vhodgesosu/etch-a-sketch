@@ -11,3 +11,15 @@ for (let i = 0; i < gridSize; i++) {
     // Append each square to the grid container
     gridContainer.appendChild(gridSquare);
 }
+
+const gridSquares = document.querySelectorAll('.gridSquare');
+
+gridSquares.forEach(square => {
+    square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = 'lightblue'; // Change background on hover
+    });
+    
+    // square.addEventListener('mouseout', () => {
+    //     square.style.backgroundColor = ''; // Reset background when not hovering
+    // });
+});
