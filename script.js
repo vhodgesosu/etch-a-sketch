@@ -12,11 +12,22 @@ for (let i = 0; i < gridSize; i++) {
     gridContainer.appendChild(gridSquare);
 }
 
+// Function to generate a random color
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 const gridSquares = document.querySelectorAll('.gridSquare');
 
 gridSquares.forEach(square => {
     square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = 'lightblue'; // Change background on hover
+        const randomColor = getRandomColor();
+        square.style.backgroundColor = randomColor; // Change background on hover
     });
     
     // square.addEventListener('mouseout', () => {
