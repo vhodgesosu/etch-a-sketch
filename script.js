@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector("#gridContainer");
+const inputButton = document.querySelector("#inputButton");
 const gridSize = 16 * 16;
 
 for (let i = 0; i < gridSize; i++) {
@@ -34,3 +35,5 @@ gridSquares.forEach(square => {
     //     square.style.backgroundColor = ''; // Reset background when not hovering
     // });
 });
+
+inputButton.addEventListener("click", function(){ alert("Input Number <100")})
