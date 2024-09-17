@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+
+    <style>
+        /* Styling for the container */
+        #gridContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 800px; /* Adjust the width to control the size of the grid */
+            height: 800px; /* Adjust the height to control the size of the grid */
+        }
+
+        /* Each square div */
+        .gridSquare {
+            width: 50px; /* 1/16th of the container's width */
+            height: 50px; /* 1/16th of the container's height */
+            box-sizing: border-box;
+            border: 1px solid black; /* Optional: add border to see each square */
+        }
+    </style>
 </head>
 <body>
+    <div id="gridContainer"></div>
     <script src="script.js"></script>
 </body>
 </html>
