@@ -36,4 +36,4 @@ gridSquares.forEach(square => {
     // });
 });
 
-inputButton.addEventListener("click", function(){ alert("Input Number <100")})
+inputButton.addEventListener("click", function(){ prompt("Input Number between 1 and 100")})
