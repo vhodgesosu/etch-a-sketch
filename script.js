@@ -36,4 +36,13 @@ gridSquares.forEach(square => {
     // });
 });
 
-inputButton.addEventListener("click", function(){ prompt("Input Number between 1 and 100")})
+inputButton.addEventListener("click", function(){ 
+    let size = parseInt(prompt('Enter grid size (between 1 and 100):'), 10)
+    
+    if (isNaN(size) || size < 1 || size > 100) {
+        alert('Please enter a valid number between 1 and 100.');
+        setGridSize(); // Ask again if the input is invalid
+    } else {
+        console.log(size);
+    }
+})
